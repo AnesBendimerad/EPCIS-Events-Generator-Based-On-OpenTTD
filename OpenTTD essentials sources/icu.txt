@@ -1,0 +1,12 @@
+* Unzip icu4c-51_1-src.zip
+* Unzip icu-modified.zip over the just unpacked files, overwriting any duplicates (icu.diff contains a diff of the changes)
+
+Building:
+* Open icu\source\allinone\allinone.sln
+* Set configuration to Release (needed for the various build tools)
+* Select appropriate platform
+  * NOTE: Creating the data library for x64 requires compiling on x64!
+* Build solution
+* Set configuration to Static Release
+* Build projects common, i18n, io, layout, layoutex, makedata (in this order)
+* Resulting static libraries will be in icu\stlib[64]
