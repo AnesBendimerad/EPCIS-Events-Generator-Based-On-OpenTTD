@@ -6,3 +6,4 @@ sudo apt-get install liblzma-dev
 sudo apt-get install liblzo2-dev
 ./configure
 make &> logOfCompileOnUbuntu.txt
+chmod 777 bin/openttd
