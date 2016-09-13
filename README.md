@@ -23,16 +23,16 @@ An object class is a range of identifiers that correspond to objects of a specif
 	creationDate="2016-9-8T11:1:38 +00:00">
 <EPCISBody>
 <VocabularyList>
-	<Vocabulary type="urn:epcglobal:epcis:vtype:EPCClass"> |\label{lst:line:vocListEPC}|
+	<Vocabulary type="urn:epcglobal:epcis:vtype:EPCClass"> 
 		<VocabularyElementList>
 			<VocabularyElement id="epc:id:sgtin:01000.0001.*">
 				<attribute id="urn:epcglobal:epcis:mda:name" value="coal"/>
 			</VocabularyElement>
 		</VocabularyElementList>
 	</Vocabulary>
-	<Vocabulary type="urn:epcglobal:epcis:vtype:BusinessLocation"> |\label{lst:line:sglnListEPC}|
+	<Vocabulary type="urn:epcglobal:epcis:vtype:BusinessLocation"> 
 		<VocabularyElementList>
-			<VocabularyElement id="urn:epc:id:sgln:01000.0020935.0"> |\label{lst:line:station}|
+			<VocabularyElement id="urn:epc:id:sgln:01000.0020935.0"> 
 				<attribute id="urn:epcglobal:epcis:mda:name" value="Atlanta Est"/>
 				<attribute id="urn:epcglobal:fmcg:mda:latitude" value="81"/>
 				<attribute id="urn:epcglobal:fmcg:mda:longitude" value="199"/>
