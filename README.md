@@ -153,7 +153,7 @@ There are two ways to generate events using this project:
 name_of_executable -g path_of_saved_game -v null:ticks=number_of_iterations
 ```
 The parameters are:
-- name_of_executable: the name of the executable. For example, it is "openttd.exe" for windows
+- name_of_executable: the name of the executable. For example, the name is "openttd.exe" for windows
 - path_of_saved_game: the file path of the game that we want to launch.
 - number_of_iterations: the number of iterations the game will execute.
 
