@@ -113,7 +113,8 @@ Several types of events are captured in this project:
 	<disposition>urn:epcglobal:cbv:disp:in_transit</disposition>
 	<bizLocation>urn:epc:id:sgln:01000.0020096.0</bizLocation>
 	<sourceList><source>urn:epc:id:sgln:01000.0020096.0</source></sourceList>
-	<destinationList><destination>urn:epc:id:sgln:01000.0020610.0</destination></destinationList>
+	<destinationList><destination>urn:epc:id:sgln:01000.0020610.0</destination>
+	</destinationList>
 </ObjectEvent>
 ```
 - **Receiving**: It is an event of type "Object Event". It is captured when a set of transported objets reaches its destination. Listing 6 is an example of receiving event. The bizStep is "receiving"
@@ -131,7 +132,8 @@ Several types of events are captured in this project:
 	<disposition>urn:epcglobal:cbv:disp:active</disposition>
 	<bizLocation>urn:epc:id:sgln:01000.0020610.0</bizLocation>
 	<sourceList><source>urn:epc:id:sgln:01000.0020096.0</source></sourceList>
-	<destinationList><destination>urn:epc:id:sgln:01000.0020610.0</destination></destinationList>
+	<destinationList><destination>urn:epc:id:sgln:01000.0020610.0</destination>
+	</destinationList>
 </ObjectEvent>
 ```
 
