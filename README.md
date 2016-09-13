@@ -148,7 +148,7 @@ The script "ubuntuCompileScript.sh" allows to compile this project on Ubuntu. Ot
 ##How to use this project
 There are two ways to generate events using this project:
 - Launch a game from the graphic interface: we can create a new game or load a saved game. While the user is playing, all the events that happen are saved in the output file.
-- Launch a game using the command line: We can also launch a saved game without graphic interface. So the user can't see what happen in the game. The advantage is that the speed of the game is so high that a great quantity of data can be generated in a few time. To launch a saved game without graphic interface, we must use this command line: 
+- Launch a game using the command line: We can also launch a saved game without graphic interface. So the user can't see what happen in the game. The advantage is that the speed of the game is so high that a great quantity of data can be generated in a few time. To launch a saved game without graphic interface, the following command line can be used: 
 ```
 name_of_executable -g path_of_saved_game -v null:ticks=number_of_iterations
 ```
