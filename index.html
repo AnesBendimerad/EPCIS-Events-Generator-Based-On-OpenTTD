@@ -86,10 +86,12 @@
 <p>There are two ways to generate events using this project:
 <ul>
   <li><strong>Launch a game from the graphic interface</strong>: We can create a new game or load a saved game. While the user is playing, all the events that happen are saved in the output file.</li>
-  <li><strong>Launch a game using the command line</strong>: We can also launch a saved game without graphic interface. So the user can't see what happen in the game. The advantage is that the speed of the game is so high that a great quantity of data can be generated in a few time. To launch a saved game without graphic interface, the following command line can be used:
-  <br/>
+  <li><strong>Launch a game using the command line</strong>: We can also launch a saved game without graphic interface. So the user can't see what happen in the game. The advantage is that the speed of the game is so high that a great quantity of data can be generated in a few time. 
+</ul>
+</p>
+<p>
+  To launch a saved game without graphic interface, the following command line can be used:
   <pre>name_of_executable -g path_of_saved_game -v null:ticks=number_of_iterations</pre>
-  <br/>
   The parameters are:
   <ul>
     <li>name_of_executable: the name of the executable. For example, the name is "openttd.exe" for windows</li>
@@ -97,10 +99,10 @@
     <li>number_of_iterations: the number of iterations the game will execute.</li>
   </ul>
   For example, the following command can be executed on Windows in the folder "Releases\windows32\OpenTTD Generator":
-  <br/>
+  <pr>
   openttd.exe -g saves\autosave15.sav -v null:ticks=100000
+  </pr>
   </li>
-</ul>
 </p>
       </section>
     </div>
