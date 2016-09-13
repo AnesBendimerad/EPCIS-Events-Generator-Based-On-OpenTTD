@@ -137,8 +137,8 @@ Several types of events are captured in this project:
 
 ##Compilation and execution
 We have already built this project in some Operating Systems. The folder "Releases" contains some executables that are ready to compile. This folder contains two repositories:
-- windows32: this folder contains an executable "openttd.exe" that can be used directly in Windows7, Windows8, Windows 10 (both 32 bits and 64 bits)
-- ubuntu 15.10: this folder contains an executable "openttd" that can be used directly in Ubuntu.
+- **windows 32**: this folder contains an executable "openttd.exe" that can be used directly in Windows7, Windows8, Windows 10 (both 32 bits and 64 bits)
+- **ubuntu 15.10**: this folder contains an executable "openttd" that can be used directly in Ubuntu.
 
 The script "ubuntuCompileScript.sh" allows to compile this project in Ubuntu. Otherwise, this project can be compiled in the same manner than the standard version of the game OpenTTD. The instructions of compilation are explained in the following links:
 - For [Unix-Like systems](https://wiki.openttd.org/Compiling_on_(GNU/)Linux_and_*BSD)
