@@ -1,4 +1,4 @@
-This project is an EPCIS Events Generator based on the game OpenTTD version 1.5.0. It captures all the supply chain events that happen in the game and writes them into an output file using the EPCIS Format.
+This project is an EPCIS Events Generator based on the game OpenTTD version 1.5.0. It captures all the transportation and the manufacturing events that happen in the game and writes them into an output file using the EPCIS Format.
 
 This project is free and open-source software licenced under the GNU General Public Licence 2.0.
 
@@ -6,9 +6,9 @@ For more details about OpenTTD : https://www.openttd.org/en/development
 
 For more details about EPCIS : http://www.gs1.org/docs/epc/epcis_1_1-standard-20140520.pdf
 
-A great number of logistics events happen in the game OpenTTD. For example, events that correspond to the creation of cargos (wood, mail, coal,...), the shipping of cargopackets using a vehicle, and the reception of cargos in a station. The current Project collects all these events and writes them into a file using the EPCIS standard.
+A great number of transportation and manufacturing events happen in the game OpenTTD. For example, events that correspond to the creation of cargos (wood, mail, coal,...), the shipping of cargopackets using a vehicle, and the reception of cargos in a station. The current Project collects all these events and writes them into a file using the EPCIS standard.
 For each game, two files are produced:
-- **EPCISEvent File**: this file contains the logistics events captured in the game.
+- **EPCISEvent File**: this file contains the transportation and manufacturing events captured in the game.
 - **MasterData File**: this file defines the bizLocations and the object classes. This elements are explained below.
 
 A bizLocation is a number that identifies a unique place in the game. This place can be a station, a town, or an industry. For each bizLocation, MasterData File specifies the name of the location, the geographic coordinates (latitude and longitude), and the type (whether it's a station, a town, or an industry). In Listing 1, the identifier "urn :epc :id :sgln :01000.0020935.0" is a bizLocation.
@@ -48,7 +48,7 @@ An object class is a range of identifiers that correspond to objects of a specif
 
 ##Types of events captured in the game
 Several types of events are captured in this project:
-- **Creation**: it is an event of type "ObjectEvent". It is captured when objects are created. It can happen in an industry when creating objects that don't require other objects as an input. Il can also happen in a town when creating passengers and mails. Listing xx is an example of a creation event. In this Listing, the bizStep (Business Step) is "commissinning".
+- **Creation**: it is an event of type "ObjectEvent". It is captured when objects are created. It can happen in an industry when creating objects that don't require other objects as an input. Il can also happen in a town when creating passengers and mails. Listing 2 is an example of a creation event. In this Listing, the bizStep (Business Step) is "commissinning".
 
 **Listing 2:**
 ```xml
@@ -65,7 +65,7 @@ Several types of events are captured in this project:
 	<bizLocation>urn:epc:id:sgln:01000.0011454.0</bizLocation>
 </ObjectEvent>
 ```
-- **Transformation**: it is an event of type "Transformation event". It is captured when a set of objects is transformed ot new objets. An example of this event is the transformation of "Iron Ore" to "Steel". Listing XX is an example of a transformation event. The bizStep is "producing".
+- **Transformation**: it is an event of type "Transformation event". It is captured when a set of objects is transformed ot new objets. An example of this event is the transformation of "Iron Ore" to "Steel". Listing 3 is an example of a transformation event. The bizStep is "producing".
 
 **Listing 3:**
 ```xml
@@ -83,7 +83,7 @@ Several types of events are captured in this project:
 	<bizLocation>urn:epc:id:sgln:01000.0037871.0</bizLocation>
 </TransformationEvent>
 ```
-- **Storing**: It is an event of type "Object Event". It is captured when input objects or produced objects are stored in the industry. Listing XX is an example of a storing event. The bizStep is "storing".
+- **Storing**: It is an event of type "Object Event". It is captured when input objects or produced objects are stored in the industry. Listing 4 is an example of a storing event. The bizStep is "storing".
 
 **Listing 4:**
 ```xml
@@ -98,7 +98,7 @@ Several types of events are captured in this project:
 	<bizLocation>urn:epc:id:sgln:01000.0050146.0</bizLocation>
 </ObjectEvent>
 ```
-- **Shipping**: It is an event of type "Object Event". It is captured when a set of objects is shipped to another place. Listing XX is an example of shipping event. The bizStep is "shipping".
+- **Shipping**: It is an event of type "Object Event". It is captured when a set of objects is shipped to another place. Listing 5 is an example of shipping event. The bizStep is "shipping".
 
 **Listing 5:**
 ```xml
@@ -115,7 +115,7 @@ Several types of events are captured in this project:
 	<sourceList><source>urn:epc:id:sgln:01000.0020096.0</source></sourceList>	<destinationList><destination>urn:epc:id:sgln:01000.0020610.0</destination></destinationList>
 </ObjectEvent>
 ```
-- **Receiving**: It is an event of type "Object Event". It is captured when a set of transported objets reaches its destination. Listing XX is an example of receiving event. The bizStep is "receiving"
+- **Receiving**: It is an event of type "Object Event". It is captured when a set of transported objets reaches its destination. Listing 6 is an example of receiving event. The bizStep is "receiving"
 
 **Listing 6:**
 ```xml
