@@ -34,8 +34,8 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>
-<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h3>
+        <h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h2>
 
 <p>This project is an EPCIS Events Generator based on the game OpenTTD version 1.5.0. It captures all the transportation and the manufacturing events that happen in the game and writes them into an output file using the EPCIS Format.</p>
 <p>This project is free and open-source software licenced under the GNU General Public Licence 2.0.</p>
@@ -51,8 +51,8 @@
 </p>
 <p>A bizLocation is a number that identifies a unique place in the game. This place can be a station, a town, or an industry. For each bizLocation, MasterData File specifies the name of the location, the geographic coordinates (latitude and longitude), and the type (whether the location is a station, a town, or an industry). In the listing below, the identifier "urn :epc :id :sgln :01000.0020935.0" is a bizLocation. An object class is a range of identifiers that correspond to objects of a specified type. In Listing 1, the object class "epc :id :sgtin :01000.0001.*" correspond to the type "coal". This means that all the identifiers that begin with "epc :id :sgtin :01000.0001." correspond to objects of type coal. An example of identifiers of objects of type coal is "epc :id :sgtin :01000.0001.2047122".</p>
 <p><img src="images/listing1.PNG" alt="" width="620" ></p>
-<h3>
-<a id="types-of-events" class="anchor" href="#types-of-events" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Types of events captured in the game</h3>
+<h2>
+<a id="types-of-events" class="anchor" href="#types-of-events" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Types of events captured in the game</h2>
 
 <p>Several types of events are captured in this project:</p>
 <ul>
@@ -67,8 +67,8 @@
   <li><strong>Receiving</strong>:</b> It is an event of type "Object Event". It is captured when a set of transported objets reaches its destination. The listing below is an example of receiving event. The bizStep is "receiving".
   <img src="images/listing6.PNG" alt="" width="620" ></li>
 </ul>
-<h3>
-<a id="compilation-and-execution" class="anchor" href="#compilation-and-executio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Compilation and execution</h3>
+<h2>
+<a id="compilation-and-execution" class="anchor" href="#compilation-and-executio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Compilation and execution</h2>
 
 <p>We have already built this project on some Operating Systems. The folder "Releases" contains executables that are ready to compile. This folder contains two repositories:
 <ul>
@@ -83,8 +83,8 @@
   <li>For <a href="https://wiki.openttd.org/Compiling_on_Windows_using_Microsoft_Visual_C%2B%2B_2012">Windows</a> </li>
 </ul>
 </p>
-<h3>
-<a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use this project</h3>
+<h2>
+<a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use this project</h2>
 
 <p>There are two ways to generate events using this project:
 <ul>
