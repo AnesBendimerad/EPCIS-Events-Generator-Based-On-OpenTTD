@@ -48,7 +48,7 @@ An object class is a range of identifiers that correspond to objects of a specif
 
 ##Types of events captured in the game
 Several types of events are captured in this project:
-- **Creation**: it is an event of type "ObjectEvent". It is captured when objects are created. It can happen in an industry when creating objects that don't require other objects as an input. Il can also happen in a town when creating passengers and mails. Listing 2 is an example of a creation event. In this Listing, the bizStep (Business Step) is "commissinning".
+- **Creation**: it is an event of type "ObjectEvent". It is captured when objects are created. It can happen in an industry when creating objects that don't require other objects as an input. It can also happen in a town when creating passengers and mails. Listing 2 is an example of a creation event. In this Listing, the bizStep (Business Step) is "commissinning".
 
 **Listing 2:**
 ```xml
