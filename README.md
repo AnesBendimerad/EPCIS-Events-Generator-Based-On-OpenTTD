@@ -49,6 +49,7 @@ An object class is a range of identifiers that correspond to objects of a specif
 ##Types of events captured in the game
 Several types of events are captured in this project:
 - **Creation**: it is an event of type "ObjectEvent". It is captured when objects are created. It can happen in an industry when creating objects that don't require other objects as an input. Il can also happen in a town when creating passengers and mails. Listing xx is an example of a creation event. In this Listing, the bizStep (Business Step) is "commissinning".
+
 **Listing 2:**
 ```xml
 <ObjectEvent>
@@ -65,6 +66,7 @@ Several types of events are captured in this project:
 </ObjectEvent>
 ```
 - **Transformation**: it is an event of type "Transformation event". It is captured when a set of objects is transformed ot new objets. An example of this event is the transformation of "Iron Ore" to "Steel". Listing XX is an example of a transformation event. The bizStep is "producing".
+
 **Listing 3:**
 ```xml
 <TransformationEvent>
@@ -82,6 +84,7 @@ Several types of events are captured in this project:
 </TransformationEvent>
 ```
 - **Storing**: It is an event of type "Object Event". It is captured when input objects or produced objects are stored in the industry. Listing XX is an example of a storing event. The bizStep is "storing".
+
 **Listing 4:**
 ```xml
 <ObjectEvent>
@@ -96,6 +99,7 @@ Several types of events are captured in this project:
 </ObjectEvent>
 ```
 - **Shipping**: It is an event of type "Object Event". It is captured when a set of objects is shipped to another place. Listing XX is an example of shipping event. The bizStep is "shipping".
+
 **Listing 5:**
 ```xml
 <ObjectEvent>
@@ -112,6 +116,7 @@ Several types of events are captured in this project:
 </ObjectEvent>
 ```
 - **Receiving**: It is an event of type "Object Event". It is captured when a set of transported objets reaches its destination. Listing XX is an example of receiving event. The bizStep is "receiving"
+
 **Listing 6:**
 ```xml
 <ObjectEvent>
