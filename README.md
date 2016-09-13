@@ -11,7 +11,7 @@ For each game, two files are produced:
 - **EPCISEvent File**: this file contains the logistics events captured in the game.
 - **MasterData File**: this file defines the bizLocations and the object classes. This elements are explained below.
 
-A bizLocation is a number that identifies a unique place in the game. This place can be a station, a town, or an industry. For each bizLocation, MasterData File specifies the name of the location, the geographic coordinates (latitude and longitude), and the type (whether it's a station, a town, or an industry). In Listing 1, the identifier "urn:epc:id:sgln:01000.0020935.0" is a bizLocation.
+A bizLocation is a number that identifies a unique place in the game. This place can be a station, a town, or an industry. For each bizLocation, MasterData File specifies the name of the location, the geographic coordinates (latitude and longitude), and the type (whether it's a station, a town, or an industry). In Listing 1, the identifier "urn :epc :id :sgln :01000.0020935.0" is a bizLocation.
 An object class is a range of identifiers that correspond to objects of a specified type. In Listing 1, the object class "epc :id :sgtin :01000.0001.*" correspond to the type "coal". This means that all the identifiers that begin with "epc :id :sgtin :01000.0001." correspond to objects of type coal. An example of identifiers of objects of type coal is "epc :id :sgtin :01000.0001.2047122".
 
 **Listing 1:**
