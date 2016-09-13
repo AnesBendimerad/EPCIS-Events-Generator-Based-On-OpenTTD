@@ -159,5 +159,5 @@ The parameters are:
 
 For example, the following command can be executed on Windows in the folder "Releases\windows32\OpenTTD Generator":
 ```
-openttd .exe -g saves \ autosave15 . sav -v null : ticks =100000
+openttd.exe -g saves\autosave15.sav -v null:ticks=100000
 ```
