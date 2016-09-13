@@ -136,7 +136,7 @@ Several types of events are captured in this project:
 ```
 
 ##Compilation and execution
-We have already built this project on some Operating Systems. The folder "Releases" contains some executables that are ready to compile. This folder contains two repositories:
+We have already built this project on some Operating Systems. The folder "Releases" contains executables that are ready to compile. This folder contains two repositories:
 - **windows 32**: this folder contains an executable "openttd.exe" that can be used directly on Windows 7, Windows 8, Windows 10 (both 32 bits and 64 bits)
 - **ubuntu 15.10**: this folder contains an executable "openttd" that can be used directly on Ubuntu.
 
