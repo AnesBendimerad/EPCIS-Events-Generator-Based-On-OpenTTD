@@ -83,7 +83,7 @@ Several types of events are captured in this project:
 	<bizLocation>urn:epc:id:sgln:01000.0037871.0</bizLocation>
 </TransformationEvent>
 ```
-- **Storing**: It is an event of type "Object Event". It is captured when input objects or produced objects are stored in the industry. Listing 4 is an example of a storing event. The bizStep is "storing".
+- **Storing**: It is an event of type "Object Event". It is captured when objects are stored in the industry. Listing 4 is an example of a storing event. The bizStep is "storing".
 
 **Listing 4:**
 ```xml
