@@ -23,24 +23,24 @@ An object class is a range of identifiers that correspond to objects of a specif
 	creationDate="2016-9-8T11:1:38 +00:00">
 <EPCISBody>
 <VocabularyList>
-<Vocabulary type="urn:epcglobal:epcis:vtype:EPCClass"> |\label{lst:line:vocListEPC}|
-	<VocabularyElementList>
-		<VocabularyElement id="epc:id:sgtin:01000.0001.*">
-			<attribute id="urn:epcglobal:epcis:mda:name" value="coal"/>
-		</VocabularyElement>
-	</VocabularyElementList>
-</Vocabulary>
-<Vocabulary type="urn:epcglobal:epcis:vtype:BusinessLocation"> |\label{lst:line:sglnListEPC}|
-	<VocabularyElementList>
-		<VocabularyElement id="urn:epc:id:sgln:01000.0020935.0"> |\label{lst:line:station}|
-			<attribute id="urn:epcglobal:epcis:mda:name" value="Atlanta Est"/>
-			<attribute id="urn:epcglobal:fmcg:mda:latitude" value="81"/>
-			<attribute id="urn:epcglobal:fmcg:mda:longitude" value="199"/>
-			<attribute id="urn:epcglobal:epcis:mda:description" value="station"/>
-			<attribute id="urn:epcglobal:epcis:mda:city" value="Atlanta"/>
-		</VocabularyElement>
-	</VocabularyElementList>
-</Vocabulary>
+	<Vocabulary type="urn:epcglobal:epcis:vtype:EPCClass"> |\label{lst:line:vocListEPC}|
+		<VocabularyElementList>
+			<VocabularyElement id="epc:id:sgtin:01000.0001.*">
+				<attribute id="urn:epcglobal:epcis:mda:name" value="coal"/>
+			</VocabularyElement>
+		</VocabularyElementList>
+	</Vocabulary>
+	<Vocabulary type="urn:epcglobal:epcis:vtype:BusinessLocation"> |\label{lst:line:sglnListEPC}|
+		<VocabularyElementList>
+			<VocabularyElement id="urn:epc:id:sgln:01000.0020935.0"> |\label{lst:line:station}|
+				<attribute id="urn:epcglobal:epcis:mda:name" value="Atlanta Est"/>
+				<attribute id="urn:epcglobal:fmcg:mda:latitude" value="81"/>
+				<attribute id="urn:epcglobal:fmcg:mda:longitude" value="199"/>
+				<attribute id="urn:epcglobal:epcis:mda:description" value="station"/>
+				<attribute id="urn:epcglobal:epcis:mda:city" value="Atlanta"/>
+			</VocabularyElement>
+		</VocabularyElementList>
+	</Vocabulary>
 </VocabularyList>
 </EPCISBody>
 </epcismd:EPCISMasterDataDocument>
@@ -112,7 +112,8 @@ Several types of events are captured in this project:
 	<bizStep>urn:epcglobal:cbv:bizstep:shipping</bizStep>
 	<disposition>urn:epcglobal:cbv:disp:in_transit</disposition>
 	<bizLocation>urn:epc:id:sgln:01000.0020096.0</bizLocation>
-	<sourceList><source>urn:epc:id:sgln:01000.0020096.0</source></sourceList>	<destinationList><destination>urn:epc:id:sgln:01000.0020610.0</destination></destinationList>
+	<sourceList><source>urn:epc:id:sgln:01000.0020096.0</source></sourceList>
+	<destinationList><destination>urn:epc:id:sgln:01000.0020610.0</destination></destinationList>
 </ObjectEvent>
 ```
 - **Receiving**: It is an event of type "Object Event". It is captured when a set of transported objets reaches its destination. Listing 6 is an example of receiving event. The bizStep is "receiving"
