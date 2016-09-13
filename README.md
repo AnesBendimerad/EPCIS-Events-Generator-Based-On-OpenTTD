@@ -8,7 +8,7 @@ For more details about EPCIS : http://www.gs1.org/docs/epc/epcis_1_1-standard-20
 
 A great number of transportation and manufacturing events happen in the game OpenTTD. For example, events that correspond to the creation of cargos (wood, mail, coal,...), the shipping of cargopackets using a vehicle, and the reception of cargos in a station. The current Project collects all these events and writes them into a file using the EPCIS standard.
 For each game, two files are produced:
-- **EPCISEvent File**: this file contains the transportation and manufacturing events captured in the game.
+- **EPCISEvent File**: this file contains the events captured in the game.
 - **MasterData File**: this file defines the bizLocations and the object classes. This elements are explained below.
 
 A bizLocation is a number that identifies a unique place in the game. This place can be a station, a town, or an industry. For each bizLocation, MasterData File specifies the name of the location, the geographic coordinates (latitude and longitude), and the type (whether it's a station, a town, or an industry). In Listing 1, the identifier "urn :epc :id :sgln :01000.0020935.0" is a bizLocation.
