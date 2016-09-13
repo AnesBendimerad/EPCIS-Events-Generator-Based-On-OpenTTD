@@ -65,7 +65,7 @@ Several types of events are captured in this project:
 	<bizLocation>urn:epc:id:sgln:01000.0011454.0</bizLocation>
 </ObjectEvent>
 ```
-- **Transformation**: it is an event of type "Transformation event". It is captured when a set of objects is transformed ot new objets. An example of this event is the transformation of "Iron Ore" to "Steel". Listing 3 is an example of a transformation event. The bizStep is "producing".
+- **Transformation**: it is an event of type "Transformation event". It is captured when a set of objects is transformed to new objets. An example of this event is the transformation of "Iron Ore" to "Steel". Listing 3 is an example of a transformation event. The bizStep is "producing".
 
 **Listing 3:**
 ```xml
