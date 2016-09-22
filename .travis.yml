@@ -1,0 +1,22 @@
+language: cpp
+compiler:
+  - gcc
+  - clang
+
+script: 
+  - cd openttd-modified
+  - chmod 777 findversion.sh
+  - chmod 777 configure
+  - ./configure
+  - make &> logOfCompileOnUbuntu.txt
+  - chmod 777 bin/openttd
+
+addons:
+  apt:
+    packages:
+    - g++-multilib
+    - libsdl2-dev
+	- libsdl-dev
+	- liblzma-dev
+	- liblzo2-dev
+
