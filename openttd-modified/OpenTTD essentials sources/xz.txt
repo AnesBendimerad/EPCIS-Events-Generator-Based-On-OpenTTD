@@ -1,0 +1,2 @@
+* Unzip (we're using the official windows package from xz)
+* copy bin_{i486,x86-64}\liblzma.a (rename to liblzma.lib)

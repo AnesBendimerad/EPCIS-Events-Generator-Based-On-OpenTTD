@@ -1,0 +1,8 @@
+* Unzip
+* Replace include\config\ftoption.h with ftoption.h.replacement
+* Open builds\win32\vc2010\freetype.vcproj
+* Set configuration to Release Mulithreaded
+* If you want to build for x64, create a new project platform based on Win32
+* Set "Runtime library" to "Multi-threaded (/MT)"
+* Build
+* Lib in objs, rename to libfreetype2.lib
