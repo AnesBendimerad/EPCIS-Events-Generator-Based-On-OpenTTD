@@ -1,6 +1,0 @@
-* Unzip
-* Open contrib\vstudio\vc10\zlibvc.sln
-* Set configuration to ReleaseWithoutASM and platform to what you need
-* Open projetc configuration of zlibstat and change "Code generation -> Runtime library" to "Multi-threaded (/MT)"
-* Build only zlibstat
-* Lib in contrib\vstudio\vc10\{x86,x64}\ZlibStatReleaseWithoutAsm
