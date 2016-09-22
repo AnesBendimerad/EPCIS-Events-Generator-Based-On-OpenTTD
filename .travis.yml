@@ -16,8 +16,6 @@ addons:
     packages:
     - g++-multilib
     - libsdl2
-	- libsdl
-	- liblzma
-	- liblzo2
-
-
+	  - libsdl
+	  - liblzma
+	  - liblzo2
