@@ -70,13 +70,13 @@
 <h2>
 <a id="compilation-and-execution" class="anchor" href="#compilation-and-executio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Compilation and execution</h2>
 
-<p>We have already built this project on some Operating Systems. The folder "Releases" contains executables that are ready to compile. This folder contains two repositories:
+<p>We have already built this project on some Operating Systems. The folder "releases" contains executables that are ready to compile. This folder contains two repositories:
 <ul>
   <li><strong>windows 32</strong>:</b> This folder contains an executable "openttd.exe" that can be used directly on Windows 7, Windows 8, Windows 10 (both 32 bits and 64 bits)</li>
   <li><b><strong>ubuntu 15.10</strong>:</b> This folder contains an executable "openttd" that can be used on Ubuntu.</li>
 </ul>
 </p>
-<p>The script "ubuntuCompileScript.sh" allows to compile this project on Ubuntu. Otherwise, this project can be compiled in the same manner than the standard version of the game OpenTTD. The instructions of compilation are explained in the following links:
+<p>The script "compile-ubuntu.sh" allows to compile this project on Ubuntu. Otherwise, this project can be compiled in the same manner than the standard version of the game OpenTTD. The instructions of compilation are explained in the following links:
 <ul>
   <li>For <a href="https://wiki.openttd.org/Compiling_on_(GNU/)Linux_and_*BSD">Unix-Like systems</a></li>
   <li>For <a href="https://wiki.openttd.org/Compiling_on_Mac_OS_X">Mac OS X</a> </li>
@@ -101,7 +101,7 @@
     <li>path_of_saved_game: the file path of the game that we want to launch.</li>
     <li>number_of_iterations: the number of iterations the game will execute.</li>
   </ul>
-  For example, the following command can be executed on Windows in the folder "Releases\windows32\OpenTTD Generator":
+  For example, the following command can be executed on Windows in the folder "releases\windows32\OpenTTD Generator":
   <pre>openttd.exe -g saves\autosave15.sav -v null:ticks=100000</pre>
 </p>
       </section>
