@@ -2,5 +2,5 @@ This repository contains examples of generated data using this project. The data
 ```
 openttd.exe  -g .\saves\savedGame1.sav -v null:ticks=1000
   -g the game we want to load
-  -v null:ticks=1000 means no GUI and stop the game after 1000 ticks
+  -v null:ticks=1000 means no GUI and stop the game after 1000 ticks (this allows to generate data much faster)
 ```
